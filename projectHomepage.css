@@ -1,0 +1,35 @@
+.nav-link {
+    position: relative;
+}
+
+.nav-link::after {
+    opacity: 0;
+    transition: all0.2s;
+    height: 2px;
+    width: 100%;
+    background-color: rgb(27, 155, 195);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.nav-link:hover::after {
+    content: '';
+    opacity: 1;
+}
+
+.navbar-brand,
+.nav-link {
+    font-style: italic;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.c-item {
+    height: 600px;
+}
+
+.c-img {
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.6);
+}
